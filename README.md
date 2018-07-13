@@ -10,7 +10,7 @@ This random number is then used to select the winning ticket from the array
 The winning ticket is then shown on the screen
 
 
-Provable
+# Provable
 
 Provable HTML aims to apply fairness to all
 
