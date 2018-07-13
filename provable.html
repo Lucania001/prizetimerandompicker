@@ -41,16 +41,16 @@
    //stripped is defined block height hash, for example this is block height 531752
 
     var stripped = "00000000000000000008f45401450e11abb963a14c398d83024d07e53642c400"
-    //strip out characters not numberic
-    var myString = stripped.replace(/\D/g,'');
+    
+
+    ///////////HEX to DECIMAL///
+    var hex = stripped.slice(Math.max(stripped.length - 10, 1))
+    yourNumber = parseInt(hex, 16);
+    console.log(yourNumber)
+    //////////////////
 
 
-
-   //remove the leading 0's
-    var newString = myString.substr(20);
-    console.log(newString)
-
-     var lukeran = newString % length
+     var lukeran = yourNumber % length
      console.log(lukeran)
      var winner = tickets[lukeran]
      alert(winner)
