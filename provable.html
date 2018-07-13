@@ -1,0 +1,87 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <title>Prize Time Random Number Picker</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="jquery.animateNumber.min.js"></script>
+
+  <script src="random.min.js"></script>
+
+
+</head>
+<body>
+
+  <script type="text/javascript">
+
+
+
+ //Tickets will contain all ticket numbers purchased. Any tickets purchased who also go the answer right will be added here
+    var tickets = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125];
+
+    var length = tickets.length
+     //var length = length -= 1
+     console.log(length)
+   
+   // alert(lukeran)
+
+   //stripped is defined block height hash, for example this is block height 531752
+
+    var stripped = "00000000000000000008f45401450e11abb963a14c398d83024d07e53642c400"
+    //strip out characters not numberic
+    var myString = stripped.replace(/\D/g,'');
+
+
+
+   //remove the leading 0's
+    var newString = myString.substr(20);
+    console.log(newString)
+
+     var lukeran = newString % length
+     console.log(lukeran)
+     var winner = tickets[lukeran]
+     alert(winner)
+
+
+    </script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+
+
+
+        </div>
+
+        
+      </div>
+    </div>
+
+    <style type="text/css">
+    #fun-level{font-size: 200px;}
+    </style>
+
+
+
+
+    <!-- Optional JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>
+     
