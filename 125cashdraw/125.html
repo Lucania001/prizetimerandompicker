@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <title>Prize Time Random Number Picker</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="../jquery.animateNumber.min.js"></script>
+
+  <script src="../random.min.js"></script>
+
+
+</head>
+<body>
+
+  <script type="text/javascript">
+
+   
+
+    //Tickets will contain all ticket numbers purchased. Any tickets purchased who also go the answer right will be added here
+    var tickets = [1,2,3,4,5, 7, 8, 9, 10];
+    
+    
+
+    function getRandom(subject, callback){
+
+     var random = new Random();
+     var length = tickets.length
+     var length = length -= 1
+    /////array -1 as arrays start at 0
+
+      // pick a random number between 0 and array length-1
+      var xyz =  random.integer(0, length);
+       
+       
+      //used random number to select winning ticker from array
+      var picked = tickets[xyz]
+      //call function to update view with winner
+       callback(picked);
+
+       
+
+     }
+
+     
+
+      function alertFinished(picked){
+        
+        //update to view to show winner
+        $('#fun-level').text('The Winner is ' + picked );
+       $('#fun-level').css("color", 'green')
+       $("#fun-level").css({
+         'padding' : '20px',
+         'border': '2px solid green',
+         
+       });
+      }
+
+     function fire(){
+
+
+      //Animate the %counter for visual effect
+      var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+      $('#fun-level').animateNumber(
+      {
+        number: 100,
+        color: 'green',
+        'font-size': '140px',
+        easing: 'easeInQuad',
+        numberStep: percent_number_step
+      },
+      15000, function() {
+        //call the get random function to pick a winner
+        getRandom('math', alertFinished);
+
+      }
+
+      );
+    }
+
+
+
+    
+    </script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+
+          <button type="button" onclick="fire()" class="btn btn-success">Pick a winner</button>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+
+
+
+          <p><span id="fun-level" style="color: red;">0 %</span>.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+    #fun-level{font-size: 200px;}
+    </style>
+
+
+
+
+    <!-- Optional JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>
