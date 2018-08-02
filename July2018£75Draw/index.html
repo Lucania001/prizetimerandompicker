@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <title>Prize Time Random Number Picker</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="../common/jquery.animateNumber.min.js"></script>
+
+  <!--<script src="random.min.js"></script>-->
+
+  
+
+
+</head>
+<body>
+
+  <!--Tickets Array-->
+  <script type="text/javascript">
+
+   
+   var tickets = [
+        
+  
+{ 
+    "user" : "5b4111d48fcd94001470198b", 
+    "firstName" : "Sarah", 
+    "lastName" : "Sanderson"
+    
+},
+{ 
+    "user" : "5b41ebb667fa2800143d3487", 
+        "firstName" : "Ania", 
+   
+},
+{ 
+    "user" : "5b0871169a7ae80014148f20", 
+    
+        "firstName" : "Kunal", 
+        "lastName" : "Dhanani-Sumaria"
+    
+},
+{ 
+    "user" : "5b42a72067fa2800143d34a0", 
+    
+        "firstName" : "Sheralee", 
+        "lastName" : "Hall"
+    
+},
+{ 
+    "user" : "5b42cca867fa2800143d34a1", 
+    
+        "firstName" : "Dir", 
+        "lastName" : "Arop"
+    
+},
+{ 
+    "user" : "5b42fa5e67fa2800143d34a3", 
+    
+        "firstName" : "Rachel ", 
+        "lastName" : "Lane "
+    
+},
+{ 
+    "user" : "5b43028b67fa2800143d34a4", 
+    
+        "firstName" : "beau", 
+        "lastName" : "davies"
+    
+},
+{ 
+    "user" : "5b432cb067fa2800143d34a7", 
+    
+        "firstName" : "Teena", 
+        "lastName" : "Riordan"
+    
+},
+{ 
+    "user" : "5b43486dd4cd490014dc4c7f", 
+    
+        "firstName" : "Stacey", 
+        "lastName" : "Miller"
+    
+},
+{ 
+    "user" : "5b437823a8f9ec0014ad7965", 
+    
+        "firstName" : "Victoria", 
+        "lastName" : "Jordan"
+    
+},
+{ 
+    "user" : "5b438280a8f9ec0014ad7967", 
+    
+        "firstName" : "Jack", 
+        "lastName" : "Randall"
+    
+},
+{ 
+    "user" : "5b4384daa8f9ec0014ad7969", 
+    
+        "firstName" : "Chavaun", 
+        "lastName" : "Facey"
+    
+},
+{ 
+    "user" : "5b43923da8f9ec0014ad796a", 
+    
+        "firstName" : "jenny", 
+        "lastName" : "reynolds"
+    
+},
+{ 
+    "user" : "5b43da77a8f9ec0014ad796e", 
+    
+        "firstName" : "Timothy", 
+        "lastName" : "Gaughran"
+    
+},
+{ 
+    "user" : "5b44499aa8f9ec0014ad796f", 
+    
+        "firstName" : "Jaclyn ", 
+        "lastName" : "Herridge "
+    
+},
+{ 
+    "user" : "5b449b26cf377f0014d7e787", 
+    
+        "firstName" : "Philippa ", 
+        "lastName" : "Self"
+    
+},
+{ 
+    "user" : "5b44aaafcf377f0014d7e789", 
+    
+        "firstName" : "Duarte", 
+        "lastName" : "Freitas"
+    
+},
+{ 
+    "user" : "5b450c1ecf377f0014d7e78f", 
+    
+        "firstName" : "Lynsey", 
+        "lastName" : "McDonald "
+    
+},
+{ 
+    "user" : "5b4510cfcf377f0014d7e790", 
+    
+        "firstName" : "Marm", 
+        "lastName" : "Millar"
+    
+},
+{ 
+    "user" : "5b451d94cf377f0014d7e791", 
+    
+        "firstName" : "Francesca", 
+        "lastName" : "Davies"
+    
+},
+{ 
+    "user" : "5b452a69cf377f0014d7e793", 
+    
+        "firstName" : "Caroline ", 
+        "lastName" : "Mccabe "
+    
+},
+{ 
+    "user" : "5b447c50a8f9ec0014ad7971", 
+    
+        "firstName" : "Labelle", 
+        "lastName" : "Ntoto "
+    
+},
+{ 
+    "user" : "5b45daf7cf377f0014d7e798", 
+    
+        "firstName" : "Csilla", 
+        "lastName" : "Fabian"
+    
+},
+{ 
+    "user" : "5b45eacd898dc60014eb0cb4", 
+    
+        "firstName" : "Lesley", 
+        "lastName" : "Young "
+    
+},
+{ 
+    "user" : "5b42055667fa2800143d348f", 
+    
+        "firstName" : "Jen", 
+        "lastName" : "Brewer"
+    
+},
+{ 
+    "user" : "5b46078f898dc60014eb0cb8", 
+    
+        "firstName" : "Guillermo", 
+        "lastName" : "Peccilli"
+    
+},
+{ 
+    "user" : "5b463130898dc60014eb0cba", 
+    
+        "firstName" : "Amanda", 
+        "lastName" : "Davies"
+    
+},
+{ 
+    "user" : "5b463156898dc60014eb0cbb", 
+    
+        "firstName" : "Pham", 
+        "lastName" : "Lam"
+    
+},
+{ 
+    "user" : "5b466797898dc60014eb0cbd", 
+    
+        "firstName" : "alan", 
+        "lastName" : "archbold"
+    
+},
+{ 
+    "user" : "5b4606e2898dc60014eb0cb6", 
+    
+        "firstName" : "Andrew", 
+        "lastName" : "Tiong"
+    
+},
+{ 
+    "user" : "5b47010e898dc60014eb0cc0", 
+    
+        "firstName" : "Hayley", 
+        "lastName" : "Freeman"
+    
+},
+{ 
+    "user" : "5b471135898dc60014eb0cc1", 
+    
+        "firstName" : "Alison", 
+        "lastName" : "Craig"
+    
+},
+{ 
+    "user" : "5b4747aa6fb5140014cafe2c", 
+    
+        "firstName" : "Sabin", 
+        "lastName" : "Smith"
+    
+},
+{ 
+    "user" : "5b0f095c077fd500142325d6", 
+    
+        "firstName" : "Paul", 
+        "lastName" : "Flindall"
+    
+},
+{ 
+    "user" : "5b071345e807030014e38227", 
+    
+        "firstName" : "Jonathan", 
+        "lastName" : "Chalmers"
+    
+},
+{ 
+    "user" : "5b4e547d40004a0014ecd71e", 
+    
+        "firstName" : "Jodie", 
+        "lastName" : "Tempest "
+    
+},
+{ 
+    "user" : "5b4e8ba940004a0014ecd720", 
+    
+        "firstName" : "Michael", 
+        "lastName" : "Ruthven"
+    
+},
+{ 
+    "user" : "5b4f11fc40004a0014ecd721", 
+    
+        "firstName" : "Nicola ", 
+        "lastName" : "Harris"
+    
+},
+{ 
+    "user" : "5b52fcb42fadbe001447d1b7", 
+    
+        "firstName" : "Chirag", 
+        "lastName" : "Ram"
+    
+},
+{ 
+    "user" : "5b56e7b9eeeef50014878586", 
+    
+        "firstName" : "Denis ", 
+        "lastName" : "McKeeman "
+    
+},
+
+{ 
+    "user" : "5b5b946079b890001451737e", 
+    
+        "firstName" : "Alan", 
+        "lastName" : "Fawcett"
+    
+},
+{ 
+    "user" : "5b537e7b2fadbe001447d1b8", 
+    
+        "firstName" : "Mary", 
+        "lastName" : "Hambling"
+    
+}
+
+
+    ];
+
+
+
+    
+    </script>
+  <!--End Tickets Array-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <!--Put in block hash-->
+          <input type="text" class="hash">
+
+          </input>
+          <!--End put in block hash-->
+          <button type="button" onclick="fire()" class="btn btn-success">Pick a winner</button>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+
+
+
+          <p><span id="fun-level" style="color: red;">0 %</span>.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+    #fun-level{font-size: 200px;}
+    </style>
+
+
+
+
+    <!-- Optional JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="../common/ptrandom.js"></script>
+  </body>
+  </html>
