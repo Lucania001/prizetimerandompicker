@@ -1,5 +1,5 @@
 
-    //Tickets will contain all ticket numbers purchased. Any tickets purchased who also go the answer right will be added here
+  
    
     
     
@@ -15,23 +15,23 @@
       var hex = blockhash.slice(Math.max(blockhash.length - 10, 1))
      
       yourNumber = parseInt(hex, 16);
-      console.log("Int is " + yourNumber)
+      //console.log("Int is " + yourNumber)
       //////////////////End Hex to Decimal/////////////////
 
 
 
        var length = tickets.length
-       console.log(length)
+       //console.log(length)
      
        // Modulus calculation to get random number 
        var lukeran = yourNumber % length
-       console.log("Random number is  " + lukeran)
+      // console.log("Random number is  " + lukeran)
        //use number to pick winning ticket from array
        var winner = tickets[lukeran]
-       console.log(winner)
+       //console.log(winner)
 
       ///////////end provable//////////
-      console.log(winner.firstName + " " + winner.lastName)
+      //console.log(winner.firstName + " " + winner.lastName)
 
 
        callback(winner);
@@ -68,7 +68,7 @@
         easing: 'easeInQuad',
         numberStep: percent_number_step
       },
-      150, function() {
+      1500, function() {
         //call the get random function to pick a winner
         getRandom(blockhash, alertFinished);
 

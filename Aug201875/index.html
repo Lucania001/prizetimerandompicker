@@ -1,0 +1,1146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <title>Random Draw Picker</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="../common/jquery.animateNumber.min.js"></script>
+
+  <!--<script src="random.min.js"></script>-->
+
+  
+<!--Blokc HASH Used
+000000000000000000157e2adb3e034498d819c48dc979724ec2d54204cc489f
+-->
+
+</head>
+<body>
+
+  <!--Tickets Array-->
+  <script type="text/javascript">
+
+   
+   var tickets = [
+        
+  
+
+
+{ 
+  
+        "firstName" : "Ellie", 
+        "lastName" : "Farrelly"
+    
+},
+{ 
+   
+        "firstName" : "Julia", 
+        "lastName" : "Szczerbinska"
+    
+},
+{ 
+    
+        "firstName" : "Kimmi", 
+        "lastName" : "Edwards"
+    
+},
+{ 
+   
+        "firstName" : "Molly", 
+        "lastName" : "Ball"
+    
+},
+{ 
+    
+        "firstName" : "Lauren", 
+        "lastName" : "Highton"
+    
+},
+{ 
+   
+        "firstName" : "Holly", 
+        "lastName" : "Cassin"
+    
+},
+{ 
+    
+        "firstName" : "Lara", 
+        "lastName" : "Carmona"
+    
+},
+{ 
+    
+        "firstName" : "Rebekah", 
+        "lastName" : "Biller pilkington "
+    
+},
+{ 
+    
+        "firstName" : "Samantha", 
+        "lastName" : "Lewis"
+    
+},
+{ 
+    
+        "firstName" : "jade", 
+        "lastName" : "obrien"
+    
+},
+{ 
+    
+        "firstName" : "sophie", 
+        "lastName" : "errin"
+    
+},
+{ 
+    
+        "firstName" : "Sammantha", 
+        "lastName" : "B"
+    
+},
+{ 
+    
+        "firstName" : "Merrion ", 
+        "lastName" : "Clark "
+    
+},
+{ 
+    
+        "firstName" : "April", 
+        "lastName" : "Thornton"
+    
+},
+{ 
+    
+        "firstName" : "charlene", 
+        "lastName" : "lynch"
+    
+},
+{ 
+    
+        "firstName" : "Ellie", 
+        "lastName" : "Gibson"
+    
+},
+{ 
+    
+        "firstName" : "Briony", 
+        "lastName" : "Cooper"
+    
+},
+{ 
+    
+        "firstName" : "Patricia ", 
+        "lastName" : "Al-ibraheemi "
+    
+},
+{ 
+    
+        "firstName" : "Farjana ", 
+        "lastName" : "Ahmed "
+    
+},
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Bowman"
+    
+},
+{ 
+    
+        "firstName" : "Amy", 
+        "lastName" : "Kitching"
+    
+},
+{ 
+    
+        "firstName" : "Chloe", 
+        "lastName" : "Lockwood"
+    
+},
+{ 
+    
+        "firstName" : "Marnie ", 
+        "lastName" : "Mott-Roberts "
+    
+},
+{ 
+    
+        "firstName" : "Kabir ", 
+        "lastName" : "Ahmed "
+    
+},
+{ 
+    
+        "firstName" : "Lauren", 
+        "lastName" : "Griffin"
+    
+},
+{ 
+    
+        "firstName" : "Farjana ", 
+        "lastName" : "Ahmed "
+    
+},
+{ 
+    
+        "firstName" : "Nadia ", 
+        "lastName" : "Wesierska "
+    
+},
+{ 
+    
+        "firstName" : "Hollie-Anne", 
+        "lastName" : "Harvey"
+    
+},
+{ 
+    
+        "firstName" : "Jazmyne", 
+        "lastName" : "Liscott "
+    
+},
+{ 
+    
+        "firstName" : "Kerry", 
+        "lastName" : "Burrows-Owen"
+    
+},
+{ 
+    
+        "firstName" : "Marisa", 
+        "lastName" : "Hastie"
+    
+},
+{ 
+    
+        "firstName" : "Laura ", 
+        "lastName" : "Worley"
+    
+},
+{ 
+    
+        "firstName" : "Melanie", 
+        "lastName" : "Pearce "
+    
+},
+{ 
+    
+        "firstName" : "Chelsea", 
+        "lastName" : "Nelson"
+    
+},
+{ 
+    
+        "firstName" : "Helen", 
+        "lastName" : "Greene"
+    
+},
+{ 
+    
+        "firstName" : "Sara", 
+        "lastName" : "Linney"
+    
+},
+{ 
+    
+        "firstName" : "Emilie", 
+        "lastName" : "Boyd"
+    
+},
+{ 
+    
+        "firstName" : "Amber", 
+        "lastName" : "Scott"
+    
+},
+{ 
+    
+        "firstName" : "Ania", 
+        "lastName" : "Brochen"
+    
+},
+{ 
+    
+        "firstName" : "Charlotte", 
+        "lastName" : "Clarke"
+    
+},
+{ 
+    
+        "firstName" : "Clodagh", 
+        "lastName" : "Doidge "
+    
+},
+{ 
+    
+        "firstName" : "Heather", 
+        "lastName" : "Stewart"
+    
+},
+{ 
+    
+        "firstName" : "Kirsty", 
+        "lastName" : "Bennett"
+    
+},
+{ 
+    
+        "firstName" : "milda", 
+        "lastName" : "lennie"
+    
+},
+{ 
+    
+        "firstName" : "Angela", 
+        "lastName" : "Stringer"
+    
+},
+{ 
+    
+        "firstName" : "Sophie", 
+        "lastName" : "Allott"
+    
+},
+{ 
+    
+        "firstName" : "Megan", 
+        "lastName" : "Innes"
+    
+},
+{ 
+    
+        "firstName" : "Chloe", 
+        "lastName" : "Brown"
+    
+},
+{ 
+    
+        "firstName" : "neve", 
+        "lastName" : "mcnally"
+    
+},
+{ 
+    
+        "firstName" : "Diane ", 
+        "lastName" : "Goudie "
+    
+},
+{ 
+    
+        "firstName" : "Hannah", 
+        "lastName" : "douglas"
+    
+},
+{ 
+    
+        "firstName" : "Callum ", 
+        "lastName" : "Murphy "
+    
+},
+{ 
+    
+        "firstName" : "JAMIE", 
+        "lastName" : "MARSHALL"
+    
+},
+{ 
+    
+        "firstName" : "Joanne", 
+        "lastName" : "Edwards"
+    
+},
+{ 
+    
+        "firstName" : "Chantelle Sarah Rose", 
+        "lastName" : "Willis"
+    
+},
+{ 
+    
+        "firstName" : "Chelsea", 
+        "lastName" : "Henderson"
+    
+},
+{ 
+    
+        "firstName" : "Reece", 
+        "lastName" : "Kelly"
+    
+},
+{ 
+    
+        "firstName" : "Abbi", 
+        "lastName" : "Staples"
+    
+},
+{ 
+    
+        "firstName" : "Helena", 
+        "lastName" : "Sinclair"
+    
+},
+{ 
+    
+        "firstName" : "Francesca", 
+        "lastName" : "Boyle"
+    
+},
+{ 
+    
+        "firstName" : "Brooke", 
+        "lastName" : "Carroll"
+    
+},
+{ 
+    
+        "firstName" : "Olivia", 
+        "lastName" : "Evans "
+    
+},
+{ 
+    
+        "firstName" : "Pip", 
+        "lastName" : "Payne"
+    
+},
+{ 
+    
+        "firstName" : "Caitlin", 
+        "lastName" : "Kiely"
+    
+},
+{ 
+    
+        "firstName" : "Gabriela", 
+        "lastName" : "Davis"
+    
+},
+{ 
+    
+        "firstName" : "Denise ", 
+        "lastName" : "Deer"
+    
+},
+{ 
+    
+        "firstName" : "Yasmine", 
+        "lastName" : "Kandali"
+    
+},
+{ 
+    
+        "firstName" : "shannon", 
+        "lastName" : "Fitzpatrick"
+    
+},
+{ 
+    
+        "firstName" : "Kelly", 
+        "lastName" : "O'Neill"
+    
+},
+{ 
+    
+        "firstName" : "Kate", 
+        "lastName" : "Faulkner"
+    
+},
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Buckley"
+    
+},
+{ 
+    
+        "firstName" : "Carly", 
+        "lastName" : "Towland"
+    
+},
+{ 
+    
+        "firstName" : "Thomas", 
+        "lastName" : "Eddy"
+    
+},
+{ 
+    
+        "firstName" : "LYN", 
+        "lastName" : "DUFFY"
+    
+},
+{ 
+    
+        "firstName" : "Paul", 
+        "lastName" : "Rushworth"
+    
+},
+{ 
+    
+        "firstName" : "Paul", 
+        "lastName" : "Ceriani"
+    
+},
+{ 
+    
+        "firstName" : "Jamie", 
+        "lastName" : "Wallis"
+    
+},
+{ 
+    
+        "firstName" : "Rebecca", 
+        "lastName" : "Brennan"
+    
+},
+{ 
+    
+        "firstName" : "William", 
+        "lastName" : "Moss"
+    
+},
+{ 
+    
+        "firstName" : "Richard", 
+        "lastName" : "Mortimer"
+    
+},
+{ 
+    
+        "firstName" : "Leanne", 
+        "lastName" : "Tular"
+    
+},
+{ 
+    
+        "firstName" : "Simon", 
+        "lastName" : "Payne"
+    
+},
+{ 
+    
+        "firstName" : "Rebecca", 
+        "lastName" : "Smith"
+    
+},
+{ 
+    
+        "firstName" : "Vanessa", 
+        "lastName" : "Pyke"
+    
+},
+{ 
+    
+        "firstName" : "Mark", 
+        "lastName" : "Palmer"
+    
+},
+{ 
+    
+        "firstName" : "Martin", 
+        "lastName" : "Lawton"
+    
+},
+{ 
+    
+        "firstName" : "olivia", 
+        "lastName" : "Kirby"
+    
+},
+{ 
+    
+        "firstName" : "Ian", 
+        "lastName" : "Garnett"
+    
+},
+{ 
+    
+        "firstName" : "katy", 
+        "lastName" : "thompson"
+    
+},
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Burford"
+    
+},
+{ 
+    
+        "firstName" : "Amy", 
+        "lastName" : "Young"
+    
+},
+{ 
+    
+        "firstName" : "mark", 
+        "lastName" : "killner"
+    
+},
+{ 
+    
+        "firstName" : "Morgan ", 
+        "lastName" : "Campbell "
+    
+},
+{ 
+    
+        "firstName" : "Kay", 
+        "lastName" : "Young"
+    
+},
+{ 
+    
+        "firstName" : "Shyam", 
+        "lastName" : "Pitroda"
+    
+},
+{ 
+    
+        "firstName" : "chloe", 
+        "lastName" : "brill"
+    
+},
+{ 
+    
+        "firstName" : "Tayla", 
+        "lastName" : "Courtice"
+    
+},
+{ 
+    
+        "firstName" : "Natalie", 
+        "lastName" : "Devlin"
+ },
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Pascoe"
+ },
+{ 
+    
+        "firstName" : "Hannah", 
+        "lastName" : "Polley"
+ },
+{ 
+    
+        "firstName" : "Andrea", 
+        "lastName" : "Aspell"
+ },
+{ 
+    
+        "firstName" : "Patricia ", 
+        "lastName" : "Moogan"
+ },
+{ 
+    
+        "firstName" : "Ayesha", 
+        "lastName" : "Foster"
+ },
+{ 
+    
+        "firstName" : "rori", 
+        "lastName" : "coller"
+ },
+{ 
+    
+        "firstName" : "Ayesha", 
+        "lastName" : "Foster"
+ },
+{ 
+    
+        "firstName" : "Rachel", 
+        "lastName" : "Dayan"
+ },
+{ 
+    
+        "firstName" : "Megan", 
+        "lastName" : "Prince"
+ },
+{ 
+    
+        "firstName" : "Lauren", 
+        "lastName" : "Pilkington"
+ },
+{ 
+    
+        "firstName" : "Grant", 
+        "lastName" : "Dreyer"
+ },
+{ 
+    
+        "firstName" : "Karen", 
+        "lastName" : "Ries"
+ },
+{ 
+    
+        "firstName" : "Tara", 
+        "lastName" : "Rosconie"
+ },
+{ 
+    
+        "firstName" : "Holly", 
+        "lastName" : "Urquhart"
+ },
+{ 
+    
+        "firstName" : "Paul", 
+        "lastName" : "Flindall"
+ },
+{ 
+    
+        "firstName" : "Hannah", 
+        "lastName" : "Thomas"
+ },
+{ 
+    
+        "firstName" : "Nicholas", 
+        "lastName" : "Grosse"
+ },
+{ 
+    
+        "firstName" : "Hannah", 
+        "lastName" : "Singleton"
+ },
+{ 
+    
+        "firstName" : "Jay", 
+        "lastName" : "MacInnes"
+ },
+{ 
+    
+        "firstName" : "Sarah", 
+        "lastName" : "Brokenshire"
+ },
+{ 
+    
+        "firstName" : "Tara", 
+        "lastName" : "Baker"
+ },
+{ 
+    
+        "firstName" : "Thomas", 
+        "lastName" : "Swallow"
+ },
+{ 
+    
+        "firstName" : "Ella", 
+        "lastName" : "Brant"
+ },
+{ 
+    
+        "firstName" : "Jennifer", 
+        "lastName" : "Timperley"
+ },
+{ 
+    
+        "firstName" : "humaira", 
+        "lastName" : "Ahmed"
+ },
+{ 
+    
+        "firstName" : "richard", 
+        "lastName" : "scholfield"
+ },
+{ 
+    
+        "firstName" : "emma", 
+        "lastName" : "walker"
+ },
+{ 
+    
+        "firstName" : "Valerie", 
+        "lastName" : "Brown"
+ },
+{ 
+    
+        "firstName" : "Ben", 
+        "lastName" : "Foden"
+ },
+{ 
+    
+        "firstName" : "Emily ", 
+        "lastName" : "Poyser "
+ },
+{ 
+    
+        "firstName" : "Emily", 
+        "lastName" : "Swinnerton"
+ },
+{ 
+    
+        "firstName" : "Lyndsey", 
+        "lastName" : "Gordon"
+ },
+{ 
+    
+        "firstName" : "Clare", 
+        "lastName" : "Holding"
+ },
+{ 
+    
+        "firstName" : "Holly", 
+        "lastName" : "Thompson"
+ },
+{ 
+    
+        "firstName" : "Maisie", 
+        "lastName" : "Collins"
+ },
+{ 
+    
+        "firstName" : "Laura Jane", 
+        "lastName" : "Freeman"
+ },
+{ 
+    
+        "firstName" : "Zoe", 
+        "lastName" : "Louch"
+ },
+{ 
+    
+        "firstName" : "Angela", 
+        "lastName" : "Thompson"
+ },
+{ 
+    
+        "firstName" : "Birgit", 
+        "lastName" : "Gaiser"
+ },
+{ 
+    
+        "firstName" : "Mollir", 
+        "lastName" : "Howard"
+ },
+{ 
+    
+        "firstName" : "Catherine", 
+        "lastName" : "Whitlow"
+ },
+{ 
+    
+        "firstName" : "Jade", 
+        "lastName" : "Fenney"
+ },
+{ 
+    
+        "firstName" : "Stacy", 
+        "lastName" : "Williams "
+ },
+{ 
+    
+        "firstName" : "Rachel ", 
+        "lastName" : "Lane "
+ },
+{ 
+    
+        "firstName" : "Aaron", 
+        "lastName" : "Lee"
+ },
+{ 
+    
+        "firstName" : "chloe", 
+        "lastName" : "benson"
+ },
+{ 
+    
+        "firstName" : "Ellie", 
+        "lastName" : "Harris"
+ },
+{ 
+    
+        "firstName" : "Helen", 
+        "lastName" : "Crockett"
+ },
+{ 
+    
+        "firstName" : "Maisy", 
+        "lastName" : "granger"
+ },
+{ 
+    
+        "firstName" : "Diane", 
+        "lastName" : "Hynd"
+ },
+{ 
+    
+        "firstName" : "Ceri", 
+        "lastName" : "Roberts"
+ },
+{ 
+    
+        "firstName" : "Ashton", 
+        "lastName" : "Myles"
+ },
+{ 
+    
+        "firstName" : "Natalie", 
+        "lastName" : "Newman"
+ },
+{ 
+    
+        "firstName" : "Jenna", 
+        "lastName" : "Park "
+ },
+{ 
+    
+        "firstName" : "samantha", 
+        "lastName" : "proud"
+ },
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Ashfield"
+ },
+{ 
+    
+        "firstName" : "Sara", 
+        "lastName" : "Liggins"
+ },
+{ 
+    
+        "firstName" : "Nigel", 
+        "lastName" : "Billings"
+ },
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Kunzi"
+ },
+{ 
+    
+        "firstName" : "John", 
+        "lastName" : "Dobie"
+ },
+{ 
+    
+        "firstName" : "Denver", 
+        "lastName" : "Gown"
+ },
+{ 
+    
+        "firstName" : "Stuart", 
+        "lastName" : "Gosney"
+ },
+{ 
+    
+        "firstName" : "Ben", 
+        "lastName" : "Bexon"
+ },
+{ 
+    
+        "firstName" : "Gemma", 
+        "lastName" : "Evans"
+ },
+{ 
+    
+        "firstName" : "Bridie", 
+        "lastName" : "Jacey"
+ },
+{ 
+    
+        "firstName" : "Megan", 
+        "lastName" : "Morton "
+ },
+{ 
+    
+        "firstName" : "luke", 
+        "lastName" : "phillips"
+ },
+{ 
+    
+        "firstName" : "Deborah", 
+        "lastName" : "Press"
+ },
+{ 
+    
+        "firstName" : "Clair", 
+        "lastName" : "Dukes"
+ },
+{ 
+    
+        "firstName" : "Sandra", 
+        "lastName" : "Kunert"
+ },
+{ 
+    
+        "firstName" : "Johanna", 
+        "lastName" : "Bullock"
+ },
+{ 
+    
+        "firstName" : "Anna", 
+        "lastName" : "Mitchell "
+ },
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Lycett"
+ },
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Mawson"
+ },
+{ 
+    
+        "firstName" : "Carole", 
+        "lastName" : "Brown"
+ },
+{ 
+    
+        "firstName" : "Amber", 
+        "lastName" : "Challenger "
+ },
+{ 
+    
+        "firstName" : "Steven ", 
+        "lastName" : "Quinn "
+ },
+{ 
+    
+        "firstName" : "Helen", 
+        "lastName" : "O'Shaughnessy"
+ },
+{ 
+    
+        "firstName" : "Vicki", 
+        "lastName" : "Chisholm "
+ },
+{ 
+    
+        "firstName" : "Ella", 
+        "lastName" : "Robinson"
+ },
+{ 
+    
+        "firstName" : "Diana", 
+        "lastName" : "Boughton"
+ },
+{ 
+    
+        "firstName" : "Angie", 
+        "lastName" : "Hoggett"
+ },
+{ 
+    
+        "firstName" : "Nicole", 
+        "lastName" : "Boyle"
+ },
+{ 
+    
+        "firstName" : "Aimee", 
+        "lastName" : "Jones"
+ },
+{ 
+    
+        "firstName" : "Rhiannon", 
+        "lastName" : "Jones"
+ },
+{ 
+    
+        "firstName" : "Meganmarie", 
+        "lastName" : "McDonald "
+ },
+{ 
+    
+        "firstName" : "Mollie", 
+        "lastName" : "Grove"
+ },
+
+{ 
+    
+        "firstName" : "Mark", 
+        "lastName" : "Sunderland"
+ },
+{ 
+    
+        "firstName" : "Debbie", 
+        "lastName" : "Connor"
+ },
+{ 
+    
+        "firstName" : "Kellie", 
+        "lastName" : "Collister"
+ },
+{ 
+    
+        "firstName" : "Marjoleine", 
+        "lastName" : "Kok"
+ },
+{ 
+    
+        "firstName" : "Charlotte", 
+        "lastName" : "Geoghegan"
+ },
+
+
+    ];
+
+
+
+    
+    </script>
+  <!--End Tickets Array-->
+
+    <div class="container">
+
+          <div class="row">
+                 <div class="col-md-12 text-center">
+
+                    <h1>Random Draw Machine</h1>
+
+                   <img src="../common/images/logo-no-bg.png" />
+                 </div>
+            </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <!--Put in block hash-->
+          <input type="text" class="hash">
+
+          </input>
+          <!--End put in block hash-->
+          <button type="button" onclick="fire()" class="btn btn-success">Pick a winner</button>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+
+
+
+          <p><span id="fun-level" style="color: red;">0 %</span>.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+    #fun-level{font-size: 200px;},
+    </style>
+
+
+
+
+    <!-- Optional JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="../common/ptrandom.js"></script>
+  </body>
+  </html>

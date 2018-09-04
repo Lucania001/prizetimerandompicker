@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <title>Random Draw Picker</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="../common/jquery.animateNumber.min.js"></script>
+
+  <!--<script src="random.min.js"></script>-->
+
+  
+
+
+</head>
+<body>
+
+  <!--Tickets Array-->
+  <script type="text/javascript">
+
+   
+   var tickets = [
+        
+  
+{ 
+    "firstName" : "Dan", 
+    "lastName" : "Litchfield"
+    
+},
+{ 
+        "firstName" : "Homer"
+   
+},
+{ 
+    
+        "firstName" : "Annie", 
+        "lastName" : "Tolemear"
+    
+},
+{ 
+    
+        "firstName" : "Luke", 
+        "lastName" : "Langfield"
+    
+},
+{ 
+    
+        "firstName" : "Stu", 
+        "lastName" : "Leeds"
+    
+},
+{ 
+
+    
+        "firstName" : "Edward", 
+        "lastName" : "Mears"
+    
+},
+{ 
+    
+        "firstName" : "Leon", 
+        "lastName" : "McQueen"
+    
+},
+{ 
+
+    
+        "firstName" : "Nathan", 
+        "lastName" : "CW"
+    
+},
+{ 
+    
+        "firstName" : "James", 
+        "lastName" : "C"
+    
+},
+{ 
+    
+        "firstName" : "Matt", 
+        "lastName" : "H"
+    
+},
+{ 
+    
+        "firstName" : "Tim", 
+        "lastName" : "Collie"
+    
+},
+{ 
+    
+        "firstName" : "Brenden", 
+        "lastName" : "G"
+    
+},
+{ 
+    
+        "firstName" : "Maryoli", 
+        "lastName" : "M"
+    
+},
+{ 
+    
+        "firstName" : "Yev", 
+        "lastName" : "V"
+    
+},
+{ 
+    
+        "firstName" : "Hannah", 
+        "lastName" : "Street"
+    
+},
+{ 
+    
+        "firstName" : "Emma", 
+        "lastName" : "Middleton"
+    
+},
+{ 
+    
+        "firstName" : "Vimala", 
+        "lastName" : "S"
+    
+},
+{ 
+    
+        "firstName" : "Laura", 
+        "lastName" : "Perry"
+    
+},
+{ 
+    
+        "firstName" : "Rob", 
+        "lastName" : "llyod"
+    
+},
+{ 
+    
+        "firstName" : "Vince", 
+        "lastName" : "H"
+    
+},
+{ 
+    
+        "firstName" : "Paul", 
+        "lastName" : "Catton"
+    
+},
+{ 
+    
+        "firstName" : "Delia", 
+        "lastName" : "Cornea"
+    
+}
+
+
+
+    ];
+
+
+
+    
+    </script>
+  <!--End Tickets Array-->
+
+    <div class="container">
+
+          <div class="row">
+                 <div class="col-md-12 text-center">
+
+                    <h1>Random Draw Machine</h1>
+
+                 </div>
+            </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <!--Put in block hash-->
+          <input type="text" class="hash">
+
+          </input>
+          <!--End put in block hash-->
+          <button type="button" onclick="fire()" class="btn btn-success">Pick a winner</button>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+
+
+
+          <p><span id="fun-level" style="color: red;">0 %</span>.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+    #fun-level{font-size: 200px;}
+    </style>
+
+
+
+
+    <!-- Optional JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="../common/ptrandom.js"></script>
+  </body>
+  </html>
